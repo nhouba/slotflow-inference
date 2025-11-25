@@ -15,22 +15,13 @@ A deep learning framework for amortized trans-dimensional inference using slot-b
 
 ## Description
 
-We propose SlotFlow, an amortized inference framework for decomposing signals into sinusoidal components when the number of sources is unknown. The model jointly infers both the cardinality $\hat{K}$ and per-component parameters through three core innovations:
+We propose SlotFlow, an amortized inference framework for decomposing signals into sinusoidal components when the number of sources is unknown. The model jointly infers both the cardinality $\hat{K}$ and per-component parameters through three core concepts:
 
-1. **Dual-Stream Encoding**: Parallel frequency- and time-domain encoders extract complementary spectral and temporal features, achieving O(K) computational scaling
-2. **Dynamic Slot Allocation**: Instantiates exactly $\hat{K}$ slots based on cardinality prediction, avoiding wasted capacity
-3. **Permutation-Invariant Training**: Hungarian-matched conditional normalizing flows with phase weighting enable robust posterior estimation
+1. **Dual-Stream Encoding**: Parallel frequency- and time-domain encoders extract complementary spectral and temporal features.
+2. **Dynamic Slot Allocation**: Instantiates exactly $\hat{K}$ slots based on cardinality prediction, avoiding wasted capacity.
+3. **Permutation-Invariant Training**: Hungarian-matched conditional normalizing flows enable robust posterior estimation.
 
 The architecture processes time-series observations, predicts a distribution over component counts $q_\phi(K | x)$, and parameterizes per-slot marginal posteriors $q_\phi(\theta_k | x, k)$ using shared rational-quadratic spline flows. Rather than modeling the full joint posterior over all parameters and sources, the method approximates a factorized posterior with shared global context, enabling interpretable and modular inference while capturing inter-component dependencies.
-
-## Installation
-
-To use the codes in this repository, create an environment:
-
-```bash
-conda create -n slotflow python=3.12 matplotlib pytorch scipy jupyter
-conda activate slotflow
-```
 
 ---
 
@@ -186,6 +177,16 @@ SlotFlow/
 
 ```
 
+---
+
+## Installation
+
+To use the codes in this repository, create an environment:
+
+```bash
+conda create -n slotflow python=3.12 matplotlib pytorch scipy jupyter
+conda activate slotflow
+```
 ---
 
 ## Quick Start
