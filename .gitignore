@@ -1,0 +1,26 @@
+# Ignore all pretrained model files
+pretrained_models/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.npz
+*.npy
+
+# Common ML/IDE caches
+.ipynb_checkpoints/
+__pycache__/
+*.log
+*.DS_Store
+
+# Large outputs from training
+outputs/
+logs/
+runs/
+checkpoints/
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
