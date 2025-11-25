@@ -170,7 +170,7 @@ The architecture operates in four stages:
 SlotFlow/
 ├── README.md
 ├── media/
-│   └── (figures, animations, etc.)
+│   └── (example figures, etc.)
 ├── pretrained_model/
 │   └── (model configuration and model weights)
 ├── slurm/
