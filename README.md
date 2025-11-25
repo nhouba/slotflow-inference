@@ -1,20 +1,17 @@
 # SlotFlow
 
+<table>
+<tr>
+<td style="width: 220px; vertical-align: middle;">
+  <img src="media/slotflow-icon.jpg" alt="SlotFlow Icon" width="200"/>
+</td>
+<td style="vertical-align: middle; padding-left: 20px;">
+
 A deep learning framework for amortized trans-dimensional inference using slot-based conditional normalizing flows.
 
-## Publication
-
-**SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows**  
-*Niklas Houba, Giovanni Giarda, Lorenzo Speri*  
-
-## Installation
-
-To use the codes in this repository, create an environment:
-
-```bash
-conda create -n slotflow python=3.12 matplotlib pytorch scipy jupyter
-conda activate slotflow
-```
+</td>
+</tr>
+</table>
 
 ## Description
 
@@ -26,9 +23,14 @@ We propose SlotFlow, an amortized inference framework for decomposing signals in
 
 The architecture processes time-series observations, predicts a distribution over component counts $q_\phi(K | x)$, and parameterizes per-slot marginal posteriors $q_\phi(\theta_k | x, k)$ using shared rational-quadratic spline flows. Rather than modeling the full joint posterior over all parameters and sources, the method approximates a factorized posterior with shared global context, enabling interpretable and modular inference while capturing inter-component dependencies.
 
-<p align="center">
-  <img src="media/slotflow-icon.jpg" alt="SlotFlow Icon" width="1000"/>
-</p>
+## Installation
+
+To use the codes in this repository, create an environment:
+
+```bash
+conda create -n slotflow python=3.12 matplotlib pytorch scipy jupyter
+conda activate slotflow
+```
 
 ---
 
