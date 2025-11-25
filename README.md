@@ -123,7 +123,7 @@ where $(\hat{a}_k, \hat{\phi}_k, \hat{f}_k) \sim q_\phi(\theta_k | c_k)$.
 ## Model Architecture
 
 <p align="center">
-  <img src="media/architecture.png" alt="architecture" width="1000"/>
+  <img src="media/architecture.png" alt="architecture" width="500"/>
 </p>
 
 The architecture operates in four stages:
@@ -137,19 +137,19 @@ The architecture operates in four stages:
 
 ## Example Outputs
 
-<h4 align="center">Slot posteriors for K = 1</h4>
-<p align="center">
-  <img src="media/K1.png" alt="K=1 example" width="600"/>
-</p>
-
 <h4 align="center">Slot posteriors for K = 2</h4>
 <p align="center">
-  <img src="media/K5.png" alt="K=2 example" width="600"/>
+  <img src="media/K2.png" alt="K=2 example" width="600"/>
 </p>
 
-<h4 align="center">Slot posteriors for K = 3</h4>
+<h4 align="center">Slot posteriors for K = 5</h4>
 <p align="center">
-  <img src="media/K10.png" alt="K=3 example" width="600"/>
+  <img src="media/K5.png" alt="K=5 example" width="600"/>
+</p>
+
+<h4 align="center">Slot posteriors for K = 10</h4>
+<p align="center">
+  <img src="media/K10.png" alt="K=10 example" width="600"/>
 </p>
 
 ---
@@ -211,7 +211,7 @@ Cluster-specific adjustments (paths, modules, partitions, GPUs) may be required.
 
 [2] Houba, N. (2025). *Deep source separation of overlapping gravitational‑wave signals and nonstationary noise artifacts*. Phys. Rev. Research. [https://doi.org/10.1103/6bjw‑xjj2](https://doi.org/10.1103/6bjw-xjj2).
 
-[3] Houba, N., Giarda, G., & Speri, L. (2025). *SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows*. [Paper Link](https://github.com/nhouba/SlotFlow).
+[3] Houba, N., Giarda, G., & Speri, L. (2025). *SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows*. [Paper Link](https://github.com/nhouba/slotflow-inference).
 
 ---
 
