@@ -2,7 +2,6 @@ import torch
 import torch.nn.functional as F
 
 from scipy.optimize import linear_sum_assignment
-import torch
 
 
 def hungarian_flow_matching_loss(

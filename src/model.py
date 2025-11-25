@@ -4,9 +4,7 @@ import torch.nn.functional as F
 import numpy as np
 
 from nflows.flows import Flow
-from nflows.transforms import CompositeTransform, ReversePermutation
 from nflows.distributions import StandardNormal
-
 from nflows.transforms.autoregressive import MaskedAffineAutoregressiveTransform
 from nflows.transforms import CompositeTransform, ReversePermutation
 from nflows.transforms.autoregressive import (
