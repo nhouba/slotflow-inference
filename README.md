@@ -194,6 +194,16 @@ SlotFlow/
 - Train a New Model: To train SlotFlow from scratch with custom settings, run Train-cluster.py. For large-scale training, we recommend launching it on an HPC cluster using the SLURM batch scripts provided in the slurm/ directory.
 Cluster-specific adjustments (paths, modules, partitions, GPUs) may be required.
 
+Download the pretrained SlotFlow model from the release page:
+
+https://github.com/nhouba/slotflow-inference/releases/latest
+
+Or download directly:
+
+```bash
+wget https://github.com/nhouba/slotflow-inference/releases/download/v1.0.0/best_model.ckpt
+```
+
 ---
 
 ## Future Directions
