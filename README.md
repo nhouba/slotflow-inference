@@ -27,7 +27,7 @@ We propose SlotFlow, an amortized inference framework for decomposing signals in
 The architecture processes time-series observations, predicts a distribution over component counts $q_\phi(K | x)$, and parameterizes per-slot marginal posteriors $q_\phi(\theta_k | x, k)$ using shared rational-quadratic spline flows. Rather than modeling the full joint posterior over all parameters and sources, the method approximates a factorized posterior with shared global context, enabling interpretable and modular inference while capturing inter-component dependencies.
 
 <p align="center">
-  <img src="media/slot-flow.gif" alt="SlotFlow animation" width="1000"/>
+  <img src="media/slotflow-icon.jpg" alt="SlotFlow Icon" width="1000"/>
 </p>
 
 ---
