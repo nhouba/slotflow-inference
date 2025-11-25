@@ -27,7 +27,7 @@ We propose SlotFlow, an amortized inference framework for decomposing signals in
 The architecture processes time-series observations, predicts a distribution over component counts $q_\phi(K | x)$, and parameterizes per-slot marginal posteriors $q_\phi(\theta_k | x, k)$ using shared rational-quadratic spline flows. Rather than modeling the full joint posterior over all parameters and sources, the method approximates a factorized posterior with shared global context, enabling interpretable and modular inference while capturing inter-component dependencies.
 
 <p align="center">
-  <img src="media/slot-flow.gif" alt="SlotFlow animation" width="1000"/>
+  <img src="media/slot-flow.gif" alt="SlotFlow animation" width="500"/>
 </p>
 
 ---
@@ -106,22 +106,10 @@ $$
 
 ---
 
-## Reconstruction
-
-Posterior samples enable per-slot signal reconstruction:
-
-$$
-\hat{x}(t) = \sum_{k=1}^{\hat{K}} \hat{a}_k \cos(2\pi \hat{f}_k t + \hat{\phi}_k)
-$$
-
-where $(\hat{a}_k, \hat{\phi}_k, \hat{f}_k) \sim q_\phi(\theta_k | c_k)$.
-
----
-
 ## Model Architecture
 
 <p align="center">
-  <img src="media/architecture.png" alt="architecture" width="1000"/>
+  <img src="media/architecture.png" alt="architecture" width="500"/>
 </p>
 
 The architecture operates in four stages:
@@ -137,15 +125,15 @@ The architecture operates in four stages:
 
 <h4 align="center">Slot posteriors for K = 1</h4>
 <p align="center">
-  <img src="media/K1.png" alt="K=1 example" width="600"/>
+  <img src="media/K2.png" alt="K=2 example" width="600"/>
 </p>
 
-<h4 align="center">Slot posteriors for K = 2</h4>
+<h4 align="center">Slot posteriors for K = 5</h4>
 <p align="center">
   <img src="media/K5.png" alt="K=2 example" width="600"/>
 </p>
 
-<h4 align="center">Slot posteriors for K = 3</h4>
+<h4 align="center">Slot posteriors for K = 10</h4>
 <p align="center">
   <img src="media/K10.png" alt="K=3 example" width="600"/>
 </p>
@@ -158,7 +146,7 @@ The architecture operates in four stages:
 - **Posterior Quality**: Wasserstein distances W₂ < 0.01 (amplitude), < 0.03 (phase), 0.0006 (frequency) vs. RJMCMC
 - **Calibration**: < 3% absolute bias across all parameters and cardinalities
 - **Speed**: 13 ms inference time (1.5×10⁶× speedup over RJMCMC for the paper's example cases)
-- **Scalability**: O(K) computational cost with embarrassingly parallel slot inference
+- **Scalability**: O(K) computational cost with parallel slot inference
 
 ---
 
@@ -209,7 +197,7 @@ Cluster-specific adjustments (paths, modules, partitions, GPUs) may be required.
 
 [2] Houba, N. (2025). *Deep source separation of overlapping gravitational‑wave signals and nonstationary noise artifacts*. Phys. Rev. Research. [https://doi.org/10.1103/6bjw‑xjj2](https://doi.org/10.1103/6bjw-xjj2).
 
-[3] Houba, N., Giarda, G., & Speri, L. (2025). *SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows*. [Paper Link](https://github.com/nhouba/SlotFlow).
+[3] Houba, N., Giarda, G., & Speri, L. (2025). *SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows*. [Paper Link](https://github.com/nhouba/slotflow-inference).
 
 ---
 
