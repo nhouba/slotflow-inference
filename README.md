@@ -222,7 +222,7 @@ wget https://github.com/nhouba/slotflow-inference/releases/download/v1.0.0/best_
 
 [2] Houba, N. (2025). *Deep source separation of overlapping gravitational‑wave signals and nonstationary noise artifacts*. Phys. Rev. Research. [https://doi.org/10.1103/6bjw‑xjj2](https://doi.org/10.1103/6bjw-xjj2).
 
-[3] Houba, N., Giarda, G., & Speri, L. (2025). *SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows*. [Paper Link](https://github.com/nhouba/slotflow-inference).
+[3] Houba, N., Giarda, G., & Speri, L. (2025). [SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows](https://arxiv.org/abs/2511.23228). *arXiv*.
 
 ---
 
@@ -231,11 +231,14 @@ wget https://github.com/nhouba/slotflow-inference/releases/download/v1.0.0/best_
 If you use SlotFlow in your research, please cite:
 
 ```bibtex
-@article{houba2025slotflow,
-  title={SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows},
-  author={Houba, Niklas and Giarda, Giovanni and Speri, Lorenzo},
-  journal={arXiv preprint},
-  year={2025}
+@misc{houba2025slotflowamortizedtransdimensionalinference,
+      title={SlotFlow: Amortized Trans-Dimensional Inference with Slot-Based Normalizing Flows}, 
+      author={Niklas Houba and Giovanni Giarda and Lorenzo Speri},
+      year={2025},
+      eprint={2511.23228},
+      archivePrefix={arXiv},
+      primaryClass={astro-ph.IM},
+      url={https://arxiv.org/abs/2511.23228}, 
 }
 ```
 
